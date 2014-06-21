@@ -17,6 +17,14 @@ public class Tuple<L, R> {
 	
 	@Override
 	public String toString() {
-		return "(" + left + ", " + right + ")";
+		return "(" + asString() + ")";
+	}
+	
+	public int size() {
+		return 2;
+	}
+
+	protected String asString() {
+		return left + ", " + right;
 	}
 }
